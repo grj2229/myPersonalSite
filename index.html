@@ -14,32 +14,40 @@ PURPOSE: Online Portfolio
     <meta name="author" content="Grace Jiang">
     <title>Grace Jiang | Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo_transparent.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scope+One&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
     <header>
       <div class="container">
         <div id="branding">
-          <h1>Grace Jiang</h1>
+          <a href="index.html"><h1>GRACE JIANG</h1></a>
+        </div>
+        <div id="logo">
+          <a href="index.html"><img src="img/logo_transparent.png" alt="Logo"></a>
         </div>
         <nav>
           <ul>
             <li><a href="index.html">
-              <span style="color: #cccccc;font-weight: bold;">Home</span></a>
-            <li><a href="about.html">About</a>
-            <li><a href="work.html">My Work</a>
+              <span style="color: #cccccc;font-weight: bold;">HOME</span></a>
+            <li><a href="about.html">ABOUT</a>
+            <li><a href="work.html">MY WORK</a>
           </ul>
         </nav>
       </div>
     </header>
 
     <section id="showcase">
-      <div class="container">
+      <div class="container" id="showcaseContent">
         <h1>Grace Jiang</h1>
         <p>Hi, welcome to my website! Scroll down to see more.</p>
       </div>
+      <div id="showcaseOverlay"></div>
     </section>
 
+<!-- Taken out because repetitive
     <section id="boxes">
       <div class="container">
         <div class="box">
@@ -50,6 +58,14 @@ PURPOSE: Online Portfolio
           <img src="img/"
           <h1><a href="work.html">My Work</a></h1>
         </div>
+      </div>
+    </section>
+-->
+
+    <section id="bio">
+      <img src="img/portrait.jpg" alt="Portrait of Myself">
+      <div id="bioText">
+        <p>I'm a Media Arts and Sciences major at Wellesley College.
       </div>
     </section>
 
