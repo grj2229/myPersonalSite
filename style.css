@@ -127,7 +127,7 @@ header #logo img {
   z-index: 1;
 } */
 
-/* boxes */
+/* Boxes
 #boxes {
   margin-top: 20px;
 }
@@ -141,9 +141,15 @@ header #logo img {
   margin: 40px;
   background-color: #dbb9ff;
 }
+*/
 
 
 /* Bio */
+#bio {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
 #bio img {
   float: left;
   width: 30%;
@@ -153,19 +159,18 @@ header #logo img {
 
 #bioText {
   float: left;
-  margin-left: 40px;
+  margin-left: 60px;
   margin-top: 40px;
-  max-width: 50em;
+  max-width: 45em;
 }
+
 
 footer {
   padding: 20px;
-  margin-top: 1000px;
   color: #ffffff;
   background-color: #cccccc;
   text-align: center;
 }
-
 
 
 /* Media Queries */
