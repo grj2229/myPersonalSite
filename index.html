@@ -5,24 +5,44 @@
 FILE NAME: index.html
 WRITTEN BY: Grace Jiang
 DATE: December 24, 2019
-PURPOSE: Online Portfolio
+PURPOSE: Website Portfolio
 -->
+
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Grace Jiang">
-    <title>Grace Jiang | Home</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="img/logo_transparent.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scope+One&display=swap">
+    <title>Grace Jiang | Home</title>
   </head>
 
+
   <body>
+
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">HOME</a>
+              <li><a href="about.html">ABOUT</a>
+              <li><a href="work.html">MY WORK</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <header>
       <div class="container">
         <div id="branding">
-          <a href="index.html"><h1>GRACE JIANG</h1></a>
+          <h1>GRACE JIANG</h1>
         </div>
         <div id="logo">
           <a href="index.html"><img src="img/logo_transparent.png" alt="Logo"></a>
@@ -71,7 +91,8 @@ PURPOSE: Online Portfolio
 
     <footer>
       <div class="container">
-      <p>Grace Jiang &copy; 2019
+        <p>Grace Jiang &copy; 2019
+      </div>
     </footer>
 
   </body>

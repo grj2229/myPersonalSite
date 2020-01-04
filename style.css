@@ -6,6 +6,7 @@ body {
   background-color: #f4f4f4;
 }
 
+
 /* Global */
 .container {
   width: 90%;
@@ -16,6 +17,156 @@ body {
 ul {
   margin:0;
   padding:0;
+}
+
+
+/* Hamburger menu */
+:root {
+  --menu-speed:0.75s;
+}
+
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  width: 28px;
+  height: 28px;
+  padding: 1rem;
+  background-color: #dbb9ff;
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Top and bottom lines */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 4;
+  top:-10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves line down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+.menu-wrap .toggler:checked + .hamburger > div::before,
+.menu-wrap .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div >div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: #512a7a;
+  opacity: 0.9;
+  border-radius: 50%;
+  width: 300vw;
+  height: 300vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  z-index: 5;
+  font-weight: bolder;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
 }
 
 
@@ -43,16 +194,6 @@ header li {
   padding: 5px 20px 0 20px;
 }
 
-header #branding {
-  float: left;
-}
-
-header #branding h1 {
-  margin:0;
-  padding-top: 8px;
-  font-size: 24pt;
-}
-
 header nav {
   float: right;
   margin-top: 12px;
@@ -64,17 +205,21 @@ header a:hover {
   font-weight:bold;
 }
 
+
 header #logo {
   top: 55%;
+  left: 50%;
+  padding-left: 0;
   margin: auto;
   position: absolute;
-  left: 50%;
   transform: translateX(-50%) translateY(-50%); /* vertical and horizontal centering */
 }
+
 
 header #logo img {
   width: 50px;
 }
+
 
 /* Showcase */
 #showcase {
@@ -153,15 +298,12 @@ header #logo img {
 #bio img {
   float: left;
   width: 30%;
-  margin-left: 80px;
   margin-top: 40px;
+  padding-right: 40px;
 }
 
 #bioText {
-  float: left;
-  margin-left: 60px;
-  margin-top: 40px;
-  max-width: 45em;
+  margin-top: 50px;
 }
 
 
@@ -174,10 +316,8 @@ footer {
 
 
 /* Media Queries */
-@media(max-width: 575px) {
+@media(min-width: 0) {
   header #branding h1 {
-    font-size: 20pt;
-    padding-top: 10px;
     display: none;
   }
 
@@ -192,10 +332,8 @@ footer {
 }
 
 
-@media(max-width: 768px) {
+@media(min-width: 575px) {
   header #branding h1 {
-    font-size: 20pt;
-    padding-top: 10px;
     display: none;
   }
 
@@ -204,13 +342,14 @@ footer {
     padding-left: 80px;
   }
 
+  header nav {
+    display: none;
+  }
 }
 
 
-@media (max-width: 991px) {
+@media(min-width: 768px) {
   header #branding h1 {
-    font-size: 20pt;
-    padding-top: 10px;
     display: none;
   }
 
@@ -218,9 +357,63 @@ footer {
     left: 0;
     padding-left: 80px;
   }
+
+  header nav {
+    display: none;
+  }
+
 }
 
 
-@media(max-width: 1200px) {
+@media (min-width: 991px) {
+  header #branding {
+    float: left;
+  }
 
+  header #branding h1 {
+    display: block;
+    margin:0;
+    padding-top: 8px;
+    font-size: 24pt;
+  }
+
+  header #logo {
+    left: 50%;
+    padding-left: 0;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  .menu-wrap {
+    display: none;
+  }
+}
+
+
+@media(min-width: 1200px) {
+  header #branding {
+    float: left;
+  }
+
+  header #branding h1 {
+    display: block;
+    margin:0;
+    padding-top: 8px;
+    font-size: 24pt;
+  }
+
+  header #logo {
+    left: 50%;
+    padding-left: 0;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  .menu-wrap {
+    display: none;
+  }
 }
