@@ -291,19 +291,12 @@ header #logo img {
 
 /* Bio */
 #bio {
-  margin-top: 20px;
-  margin-bottom: 100px;
-}
-
-#bio img {
-  float: left;
-  width: 30%;
   margin-top: 40px;
-  padding-right: 40px;
+  margin-bottom: 80px;
 }
 
 #bioText {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 
@@ -329,6 +322,19 @@ footer {
   header nav {
     display: none;
   }
+
+  #bio #about {
+    width: 75%;
+    margin: auto;
+  }
+
+  #bio #about img {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
+  }
 }
 
 
@@ -344,6 +350,19 @@ footer {
 
   header nav {
     display: none;
+  }
+
+  #bio #about {
+    width: 75%;
+    margin: auto;
+  }
+
+  #bio #about img {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
   }
 }
 
@@ -362,17 +381,32 @@ footer {
     display: none;
   }
 
+  #bio #about {
+    width: 100%;
+  }
+
+
+  #bio #about img {
+    float: left;
+    width: 30%;
+    min-width: 300px;
+    padding-right: 40px;
+  }
 }
 
 
 @media (min-width: 991px) {
+  .menu-wrap {
+    display: none;
+  }
+
   header #branding {
     float: left;
   }
 
   header #branding h1 {
     display: block;
-    margin:0;
+    margin: 0;
     padding-top: 8px;
     font-size: 24pt;
   }
@@ -386,13 +420,19 @@ footer {
     display: block;
   }
 
-  .menu-wrap {
-    display: none;
+  #bio img {
+    float: left;
+    width: 30%;
+    padding-right: 40px;
   }
 }
 
 
 @media(min-width: 1200px) {
+  .menu-wrap {
+    display: none;
+  }
+
   header #branding {
     float: left;
   }
@@ -413,7 +453,9 @@ footer {
     display: block;
   }
 
-  .menu-wrap {
-    display: none;
+  #bio img {
+    float: left;
+    width: 30%;
+    padding-right: 40px;
   }
 }
