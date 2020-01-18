@@ -1,0 +1,31 @@
+/* Media Queries */
+  @media(max-width: 1200px) {
+    .menu-wrap {
+      display: none;
+    }
+    
+    .menu-wrap .hamburger{
+      display: none;
+    }
+
+    .menu-wrap .hamburger > div {
+      display: none;
+    }
+
+    .menu-wrap .menu{
+      display: none;
+    }
+
+    .menu-wrap .menu > div {
+      display: none;
+    }
+  
+    header #branding h1 {
+      display: none;
+    }
+  
+    header nav {
+      display: none;
+    }
+  }
+  

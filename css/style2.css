@@ -1,0 +1,147 @@
+/* Body*/
+body {
+  font-family: 'Scope One', serif;
+  line-height: 1.5;
+  padding:0;
+  margin:0;
+  background-color: #f4f4f4;
+}
+  
+  
+/* Global */
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin:0;
+  padding:0;
+}
+
+
+/* Header */
+header {
+  background: #ffffff;
+  color: #dbb9ff;
+  padding-top: 0px;
+  min-height: 60px;
+  box-shadow: 2px 2px 2px grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  display: block;
+  margin:0;
+  padding-top: 8px;
+  font-size: 24pt;
+}
+
+header a {
+  color: #dbb9ff;
+  text-decoration: none;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 5px 20px 0 20px;
+}
+
+header nav {
+  float: right;
+  margin-top: 12px;
+  font-size: 14pt;
+}
+
+header a:hover {
+color: #9066f9; 
+font-weight:bold;
+}
+
+header #logo {
+top: 55%;
+left: 50%;
+padding-left: 0;
+margin: auto;
+position: absolute;
+transform: translateX(-50%) translateY(-50%); /* vertical and horizontal centering */
+}
+
+
+header #logo img {
+width: 50px;
+}
+
+  
+/* Showcase */
+#showcase {
+  margin-top: 2px;
+  /* min-height: 500px; */
+  height: 100vh;
+  width: 100%;
+  
+  text-align: center;
+  color: #ffffff;
+  background: url("../img/cityscape.jpg") no-repeat -790px -1500px;
+  
+  background-attachment: fixed;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+  
+#showcase h1 {
+  margin-top:150px;
+  font-size: 70pt;
+  margin-bottom: 10px;
+}
+  
+#showcase p{
+  font-size: 14pt;
+  color: #ffffff;
+}
+  
+#showcaseContent {
+  padding-bottom: 150px;
+  z-index: 5;
+}
+
+/* Bio */
+#bio {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+#bio img {
+  float: left;
+  width: 30%;
+  padding-right: 40px;
+}
+
+#bioText {
+  margin-top: 40px;
+}
+
+
+footer {
+  padding: 20px;
+  color: #ffffff;
+  background-color: #cccccc;
+  text-align: center;
+}
+  
