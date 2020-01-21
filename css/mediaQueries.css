@@ -1,31 +1,130 @@
 /* Media Queries */
-  @media(max-width: 1200px) {
-    .menu-wrap {
-      display: none;
-    }
-    
-    .menu-wrap .hamburger{
-      display: none;
-    }
-
-    .menu-wrap .hamburger > div {
-      display: none;
-    }
-
-    .menu-wrap .menu{
-      display: none;
-    }
-
-    .menu-wrap .menu > div {
-      display: none;
-    }
-  
-    header #branding h1 {
-      display: none;
-    }
-  
-    header nav {
-      display: none;
-    }
+@media(max-width: 575px) {
+  .menu-wrap{
+    display: block;
   }
+
+  header #branding h1 {
+    display: none;
+  }
+
+  header #logo {
+    left: 0;
+    padding-left: 80px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #bio #about {
+    width: 75%;
+    margin: auto;
+  }
+
+  #bio #about img {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  #bioText {
+    font-size: 12pt;
+  }
+}
+
+@media(max-width: 768px) {
+  .menu-wrap {
+    display: block;
+  }
+
+  header #branding h1 {
+    display: none;
+  }
+
+  header #logo {
+    left: 0;
+    padding-left: 80px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #bio #about {
+    width: 75%;
+    margin: auto;
+  }
+
+  #bio #about img {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  #bioText {
+    font-size: 12pt;;
+  }
+}
+
+@media(max-width: 991px) {
+  .menu-wrap {
+    display: block;
+  }
+
+  header #branding h1 {
+    display: none;
+  }
+
+  header #logo {
+    left: 0;
+    padding-left: 80px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #bio #about img {
+    min-width: 300px;
+  }
+
+  #bioText {
+    font-size: 12pt;
+  }
+}
+
+@media(max-width: 1200px) {
+  #bio #about {
+    max-width: 95%;
+    margin: auto;
+  }
+  
+  #bio #about img {
+    min-width: 350px;
+  }
+
+  #bioText {
+    font-size: 12pt;
+  }
+}
+  
+@media(min-width: 1200px) {
+  #bio #about {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  #bio #about img {
+    min-width: 350px;
+  }
+
+  #bioText {
+    font-size: 14pt;
+  }
+}
   
