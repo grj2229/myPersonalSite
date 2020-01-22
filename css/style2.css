@@ -121,7 +121,7 @@ width: 50px;
   z-index: 5;
 }
 
-/* Bio */
+/* Bio section in index.html */
 #bio {
   margin-top: 40px;
   margin-bottom: 80px;
@@ -138,10 +138,23 @@ width: 50px;
 }
 
 
+/* Main section in work.html */
+#main {
+  margin-top: 40px;
+  margin-bottom:40px;
+}
+
+
+/* Footer */
 footer {
   padding: 20px;
   color: #ffffff;
-  background-color: #cccccc;
+  background-color: #c7c7c7;
   text-align: center;
 }
   
+footer img {
+  width: 30px;
+  padding: 20px;
+  filter: grayscale(100%);
+}
