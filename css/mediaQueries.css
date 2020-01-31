@@ -117,14 +117,12 @@
   #bio #about {
     max-width: 90%;
     margin: auto;
+    font-size: 14pt;
   }
 
   #bio #about img {
     min-width: 350px;
   }
 
-  #bioText {
-    font-size: 14pt;
-  }
 }
   
