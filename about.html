@@ -2,9 +2,9 @@
 <html lang="en">
 
 <!--
-FILE NAME: index.html
+FILE NAME: about.html
 WRITTEN BY: Grace Jiang
-DATE CREATED: December 24, 2019
+DATE CREATED: October 20, 2020
 PURPOSE: Website Portfolio
 -->
 
@@ -17,9 +17,10 @@ PURPOSE: Website Portfolio
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburgerMenu.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="shortcut icon" type="image/png" href="img/logo_transparent.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
-    <title>Grace Jiang | Home</title>
+    <title>Grace Jiang | About</title>
   </head>
 
 
@@ -52,56 +53,49 @@ PURPOSE: Website Portfolio
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">
-              <span style="color: #cccccc;">HOME</span></a>
+            <li><a href="index.html">HOME</a>
             <li><a href="index.html#work">WORK</a>
-            <li><a href="about.html">ABOUT</a>
+            <li><a href="about.html"><span style="color: #cccccc;">ABOUT</span></a>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="showcase">
-      <div class="container" id="showcaseContent">
-        <h1>Grace Jiang</h1>
-        <!-- <p>Hi, welcome to my website! Scroll down to see more.</p> -->
+    <section id="bio">
+      <div class="container" id="about">
+        <div id = "portrait">
+          <img src="img/portrait2.jpg" alt="Portrait of Myself">
+        </div>
+        <div id="intro">
+          <p>Hi! Thanks for coming by my website :)
+            <br><br> My name is Grace, and I'm an aspiring UX/UI designer. I'm a junior studying Media Arts
+            and Sciences, an interdepartmental major between Art and Computer Science, at Wellesley College. 
+            I also love music and fitness, and from time to time, you'll find me capturing memories with 
+            photographs and videos.
+        </div>
+       
+        <!-- <div id="courses">
+          <p>
+            <u>RELEVANT COURSEWORK</u> <br>
+            Computing for the Socio-Techno Web <br>
+            Virtual Form (using Maya) <br>
+            Data Structures (Java) <br>
+          </p>
+        </div>
+        <div id="languages">
+            <p>
+              <u>LANGUAGES</u> <br>
+              Java <br>
+              Python <br>
+              HTML <br>
+              CSS <br>
+              JavaScript <br>
+            </p>
+        </div> -->
         
-        <!-- Icon from https://www.flaticon.com/authors/pixel-perfect -->
-        <a href="index.html#work"><img src="img/down_button.png" alt="Down Button"></a>
-      </div>
-      <div id="showcaseOverlay"></div>
-    </section>
-
-<!-- Taken out because repetitive
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="img/"
-          <h1><a href="about.html">About</a></h1>
-        </div>
-        <div class="box">
-          <img src="img/"
-          <h1><a href="work.html">My Work</a></h1>
-        </div>
-      </div>
-    </section>
--->
-
-    <section id="work">
-      <div class="container">
-        <h1>Design Work</h1>
-        <div id="design">
-          <div><img id="test" src="img/test.png" alt="test" ></div>
-          <div><img id="test" src="img/test.png" alt="test" ></div>
-          <div><img id="test" src="img/test.png" alt="test" ></div>
-        </div>
-        <br>
-        <br>
-        <h1>Coursework</h1>
-        <div id="coursework">
-          <div><img id="test" src="img/test.png" alt="test" ></div>
-          <div><img id="test" src="img/test.png" alt="test" ></div>
-          <div><img id="test" src="img/test.png" alt="test" ></div>
+        <div id="resume">
+          <br>
+          Here is my <a href="Grace_Jiang_Resume.pdf">resume</a>.
         </div>
       </div>
     </section>

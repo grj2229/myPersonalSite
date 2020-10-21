@@ -1,16 +1,16 @@
 /* Body*/
 body {
-  font-family: 'Scope One', serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   padding:0;
   margin:0;
-  background-color: #f4f4f4;
+  background-color: #fafafa;
 }
   
   
 /* Global */
 .container {
-  width: 90%;
+  width: 85%;
   margin: auto;
   overflow: hidden;
 }
@@ -41,8 +41,8 @@ header #branding {
 header #branding h1 {
   display: block;
   margin:0;
-  padding-top: 8px;
-  font-size: 24pt;
+  padding-top: 12px;
+  font-size: 18pt;
 }
 
 header a {
@@ -64,7 +64,7 @@ header nav {
 
 header a:hover {
 color: #9066f9; 
-font-weight:bold;
+/* font-weight:bold; */
 }
 
 header #logo {
@@ -108,7 +108,7 @@ width: 50px;
 #showcase h1 {
   margin-top:150px;
   font-size: 70pt;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
   
 #showcase p{
@@ -121,20 +121,34 @@ width: 50px;
   z-index: 5;
 }
 
-/* Bio section in index.html */
-#bio {
+/* Work */
+
+#work{
   margin-top: 40px;
   margin-bottom: 80px;
 }
 
-#bio img {
-  float: left;
-  width: 30%;
-  padding-right: 40px;
+#design {
+  display: flex;
+  justify-content: space-between;
 }
 
-#bioText {
-  margin-top: 40px;
+
+#coursework {
+  display: flex;
+  justify-content: space-between;
+}
+
+#jubilee{
+  box-shadow: 5px 10px 10px grey;
+}
+
+#creativerse{
+  box-shadow: 5px 10px 10px grey;
+}
+
+#comminvest{
+  box-shadow: 5px 10px 10px grey;
 }
 
 

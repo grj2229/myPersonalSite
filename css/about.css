@@ -1,0 +1,14 @@
+/* Main section in about.html*/
+#about {
+    width: 65%;
+}
+
+#bio {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+  
+#bio img {
+    float: left;
+    width: 30%;
+    padding-right: 40px;
