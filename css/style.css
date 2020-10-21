@@ -124,31 +124,32 @@ width: 50px;
 /* Work */
 
 #work{
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
-#design {
+#work #design h1 {
+  margin-top: 100px;
+}
+
+#work #course h1 {
+  margin-top: 60px;
+}
+
+#designwork {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-
 
 #coursework {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-#jubilee{
+.thumbnail{
   box-shadow: 5px 10px 10px grey;
-}
-
-#creativerse{
-  box-shadow: 5px 10px 10px grey;
-}
-
-#comminvest{
-  box-shadow: 5px 10px 10px grey;
+  margin-bottom: 40px;
 }
 
 
