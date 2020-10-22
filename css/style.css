@@ -27,7 +27,7 @@ header {
   color: #dbb9ff;
   padding-top: 0px;
   min-height: 60px;
-  box-shadow: 2px 2px 2px grey;
+  box-shadow: 2px 3px 10px grey;
   position: fixed;
   top: 0;
   width: 100%;
@@ -53,7 +53,7 @@ header a {
 header li {
   float: left;
   display: inline;
-  padding: 5px 20px 0 20px;
+  padding: 5px 35px 0 20px;
 }
 
 header nav {
