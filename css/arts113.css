@@ -1,0 +1,43 @@
+/* Main section in arts113.html*/
+
+#arts113 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+#arts113 #container {
+    width: 65%;
+}
+
+#arts113 h1 {
+    text-align: center;
+    font-size: 36pt;
+    /* text-decoration: underline overline; */
+    /* text-shadow: 2px 2px #dbb9ff; */
+    padding-bottom: 40px;
+}
+
+#birdhouse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+#birdhouse img {
+    width: 350px;
+}
+
+#naturalParadigm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+#naturalParadigm img {
+    width: 350px;
+}
+/* #bio #about {
+    width: 65%;
+} */

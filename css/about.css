@@ -1,11 +1,12 @@
 /* Main section in about.html*/
-#about {
-    width: 65%;
-}
 
 #bio {
     margin-top: 100px;
     margin-bottom: 80px;
+}
+
+#bio #about {
+    width: 65%;
 }
   
 #bio img {
