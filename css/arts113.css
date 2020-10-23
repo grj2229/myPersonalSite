@@ -5,10 +5,6 @@
     margin-bottom: 80px;
 }
 
-#arts113 #container {
-    width: 65%;
-}
-
 #arts113 h1 {
     text-align: center;
     font-size: 36pt;
@@ -21,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-top: 20px;
     padding-bottom: 100px;
 }
 
@@ -32,6 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-top: 20px;
     padding-bottom: 100px;
 }
 

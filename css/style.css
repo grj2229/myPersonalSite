@@ -116,7 +116,7 @@ width: 50px;
   color: #ffffff;
 }
   
-#showcaseContent {
+#showcase-content {
   padding-bottom: 150px;
   z-index: 5;
 }
@@ -135,13 +135,13 @@ width: 50px;
   margin-top: 60px;
 }
 
-#designwork {
+#design-work {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-#coursework {
+#course-work {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
