@@ -1,7 +1,6 @@
 /* Main section in arts313.html*/
 
 #arts313 {
-    justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -11,39 +10,49 @@
     font-size: 36pt;
     /* text-decoration: underline overline; */
     /* text-shadow: 2px 2px #dbb9ff; */
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+}
+
+#arts313 h2 {
+    text-align: center;
+    margin-top: 40px;
+    ]
+}
+
+#main {
+    width: 65%;
 }
 
 #toy {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 60px;
 }
 
 #toy img {
-    height: 300px;
-    margin-top: 20px;;
-    margin-bottom: 40px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 #head {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 60px;
 }
 
 #head img {
-    width: 350px;
-    margin-top: 20px;;
-    margin-bottom: 40px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 #group-project {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 60px;
 }
 
