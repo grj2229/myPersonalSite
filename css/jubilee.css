@@ -1,0 +1,38 @@
+/* Main section in jubilee.html*/
+
+#jubilee {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.main {
+    width: 65%;  
+    margin: auto;
+    overflow: hidden;
+}
+
+#title h1 {
+    text-align: center;
+    font-size: 36pt;
+    /* text-decoration: underline overline; */
+    /* text-shadow: 2px 2px #dbb9ff; */
+    margin-bottom: 10px;
+}
+
+#title h2 {
+    text-align: center;
+    font-size: 15pt;
+    /* text-decoration: underline overline; */
+    /* text-shadow: 2px 2px #dbb9ff; */
+    margin-bottom: 80px;
+}
+
+#adobeXD-embed {
+    width: 100%;
+    text-align: center;
+    justify-content: ;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
