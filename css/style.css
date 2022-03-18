@@ -1,6 +1,18 @@
 /* Body*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Nunito Sans', sans-serif;
+  
+  /* font-family: monarcha,serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  /* font-family: degular-text, sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  font-size: 14pt;
+
   line-height: 1.5;
   padding:0;
   margin:0;
@@ -14,6 +26,19 @@ body {
   width: 85%;
   margin: auto;
   overflow: hidden;
+}
+
+h1 {
+  /* font-family: 'Chonburi', sans-serif; */
+  font-family: monarcha,serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-family: monarcha, serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 ul {
@@ -55,8 +80,8 @@ header #branding {
 header #branding h1 {
   display: block;
   margin:0;
-  padding-top: 12px;
-  font-size: 18pt;
+  padding-top: 5px;
+  font-size: 24pt;
 }
 
 header a {
@@ -72,8 +97,8 @@ header li {
 
 header nav {
   float: right;
-  margin-top: 12px;
-  font-size: 14pt;
+  margin-top: 5px;
+  font-size: 18pt;
 }
 
 header a:hover {
@@ -165,12 +190,14 @@ width: 50px;
   box-shadow: 5px 10px 10px grey;
   margin-bottom: 40px;
   margin-right: 50px;
+  border-radius: 10px;
 }
 
 .course-thumbnail{
   box-shadow: 5px 10px 10px grey;
   margin-bottom: 40px;
   margin-right: 50px;
+  border-radius: 10px;
 }
 
 
