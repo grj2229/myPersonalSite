@@ -233,7 +233,8 @@ width: 50px;
 }
 
 .hobbies-thumbnail p {
-  padding-top: 125px;;
+  padding-top: 125px;
+  padding-bottom: 0;
 }
 
 

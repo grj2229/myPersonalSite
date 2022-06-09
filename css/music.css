@@ -1,11 +1,11 @@
 /* Main section in video.html*/
 
-#video {
+#music {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-#video h1 {
+#music h1 {
     text-align: center;
     font-size: 36pt;
     /* text-decoration: underline overline; */
@@ -13,7 +13,7 @@
     margin-bottom: 80px;
 }
 
-#video h2 {
+#music h2 {
     text-align: center;
     margin-top: 40px;
 }
@@ -26,9 +26,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
 }
 
 #youtube iframe {
     margin-top: 20px;
+}
+
+#program {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 120px;
 }
